@@ -184,6 +184,8 @@ aside span {
     border: none;
     height: 100%;
     width: 100%;
+    color: #fff;
+    outline: none;
 }
 
 .search>input::placeholder {
@@ -270,4 +272,95 @@ aside span {
     color: var(--primary-color);
     border: 1px solid #0E9EEF;
     background-color: transparent;
+}
+
+.section-heading {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    padding: 10px;
+}
+
+.section-heading>span {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+#weeklyTop {
+    padding: 0 19px 0 19px;
+
+}
+
+.song-items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.cards-songs,
+.cards-songs2 {
+    display: flex;
+    gap: 24px;
+    padding: 4px;
+    align-items: center;
+}
+
+.card-song {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 15px;
+    border-radius: 10px;
+    min-height: 214px;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+}
+
+.song-info>h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.song-info>p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    opacity: 0.8;
+}
+
+
+.view-all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.view-all>a {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.view-all>button {
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
 }
