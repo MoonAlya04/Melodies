@@ -1,0 +1,116 @@
+:root {
+    --font-primary: 'Vazirmatn', sans-serif;
+    --primary-color: #0E9EEF;
+    --secondary-color: #EE10B0;
+    --dark-color: #1F1F1F;
+    --darker-color: #181818;
+    --accent-color: #53063E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+#wrapper {
+    background-color: var(--darker-color);
+}
+
+aside {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 270px;
+    padding: 48px 64px 48px 64px;
+    border-right: 2px solid #EE10B0;
+    box-shadow: 8px 0px 24.2px 0px #EE10B026;
+}
+
+aside > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+
+aside a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 3px 3px 3px 0;
+}
+
+ion-icon {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 3px 8px 3px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+aside li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 174px;
+}
+
+aside li:active {
+    background-color: #EE10B0;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 9px;
+    padding: 2px 8px;
+    transition: all 0.3s;
+}
+
+.logout {
+    color: #EE10B0;
+}
+.logout:active {
+    color: #ffffff;
+}
+.add-playlist{
+    color: #0E9EEF;
+}
+.add-playlist:active{
+    color: #ffffff;
+}
+.logout > ion-icon {
+    color: #EE10B0;
+}
+.add-playlist>ion-icon{
+    color: #0E9EEF;
+}
+.logout:active > ion-icon {
+    color: #ffffff;
+}
+.add-playlist:active>ion-icon{
+    color: #ffffff;
+}
+aside span {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    opacity: 0.6;
+}
