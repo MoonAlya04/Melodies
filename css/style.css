@@ -1,5 +1,5 @@
 :root {
-    --font-primary: 'Vazirmatn', sans-serif;
+    --font-primary: 'Just Another Hand', cursive;
     --primary-color: #0E9EEF;
     --secondary-color: #EE10B0;
     --dark-color: #1F1F1F;
@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-primary);
+    font-family:'Vazirmatn', sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -125,7 +125,8 @@ aside span {
 
 /* `````````````main`````````` */
 
-#main {
+
+.overlay{
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -134,7 +135,7 @@ aside span {
 }
 
 .main-wrapper {
-    width: 100%;
+    max-width: 1082px;
     min-height: 595px;
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 101.37%),
         linear-gradient(-91deg, rgba(0, 0, 0, 0) 13.23%, rgba(0, 0, 0, 0.8) 64.01%),
@@ -151,6 +152,7 @@ aside span {
     align-items: center;
     gap: 16px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .nav-menu {
@@ -288,8 +290,15 @@ aside span {
     font-size: 32px;
     line-height: 100%;
 }
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+    padding: 48px 64px 0 25px;
+}
 
-#weeklyTop {
+#weeklyTop,#newRelise,#trending {
     padding: 0 19px 0 19px;
 
 }

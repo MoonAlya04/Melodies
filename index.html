@@ -7,6 +7,11 @@
             href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Melodies</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -63,7 +68,6 @@
                             >
                         </li>
                     </ul>
-
                     <ul class="playlist">
                         <span>Playlist and favorite</span>
                         <li>
@@ -101,7 +105,7 @@
                         </li>
                     </ul>
                 </aside>
-                <main id="main">
+                <div class="overlay">
                     <div class="main-wrapper">
                         <header class="header">
                             <div class="search">
@@ -134,59 +138,68 @@
                                 <button class="btn btn-login">Login</button>
                                 <button class="btn btn-signup">Sign up</button>
                             </div>
-                            <section></section>
                         </header>
-                        <section>
-                            <div class="main-info">
-                                <h1 class="heading-text">
-                                    All the <span>Best Songs</span> in One Place
-                                </h1>
-                                <p>
-                                    On our website, you can access an amazing
-                                    collection of popular and new songs. Stream
-                                    your favorite tracks in high quality and
-                                    enjoy without interruptions. Whatever your
-                                    taste in music, we have it all for you!
-                                </p>
-                                <div class="main-btns">
-                                    <button class="btn pink-btn">
-                                        Discover Now
-                                    </button>
-                                    <button class="btn blue-btn">
-                                        Create Playlist
-                                    </button>
+                        <div class="main-info">
+                            <h1 class="heading-text">
+                                All the <span>Best Songs</span> in One Place
+                            </h1>
+                            <p>
+                                On our website, you can access an amazing
+                                collection of popular and new songs. Stream your
+                                favorite tracks in high quality and enjoy
+                                without interruptions. Whatever your taste in
+                                music, we have it all for you!
+                            </p>
+                            <div class="main-btns">
+                                <button class="btn pink-btn">
+                                    Discover Now
+                                </button>
+                                <button class="btn blue-btn">
+                                    Create Playlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <main id="main">
+                        <section id="weeklyTop">
+                            <div class="section-titles">
+                                <h2 class="section-heading">
+                                    Weekly Top <span>Songs</span>
+                                </h2>
+                            </div>
+                            <div class="song-items">
+                                <div class="cards-songs"></div>
+                                <div class="view-all">
+                                    <button class="view-btn">+</button>
+                                    <a href="#">View All</a>
                                 </div>
                             </div>
-                    
-                    </div>
-                </section>
-                <section id="weeklyTop">
-                    <div class="section-titles">
-                        <h2 class="section-heading">Weekly Top <span>Songs</span> </h2>
-                    </div>
-                    <div class="song-items">
-                        <div class="cards-songs">
-                        </div>
-                        <div class="view-all">
-                            <button class="view-btn">+</button>
-                            <a href="#">View All</a>
-                        </div>
-                    </div>
-                </section>
-                <section id="weeklyTop">
-                    <div class="section-titles">
-                        <h2 class="section-heading">New Release <span>Songs</span></h2>
-                    </div>
-                    <div class="song-items">
-                        <div class="cards-songs2">
-                        </div>
-                        <div class="view-all">
-                            <button class="view-btn">+</button>
-                            <a href="#">View All</a>
-                        </div>
-                    </div>
-                </section>
-                </main>
+                        </section>
+                        <section id="newRelise">
+                            <div class="section-titles">
+                                <h2 class="section-heading">
+                                    New Release <span>Songs</span>
+                                </h2>
+                            </div>
+                            <div class="song-items">
+                                <div class="cards-songs2"></div>
+                                <div class="view-all">
+                                    <button class="view-btn">+</button>
+                                    <a href="#">View All</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="trending">
+                            <div class="section-titles">
+                                <h2 class="section-heading">
+                                    Trending <span>Songs</span>
+                                </h2>
+                            </div>
+                            <div class="trending-songs"></div>
+                        </section>
+                    </main>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
